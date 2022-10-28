@@ -21,11 +21,10 @@ public class DBUtil {
 	static Connection makeConnection() throws SQLException {
 		//step 2
 		
-		String connectionUrl = "jdbc:postgresql://database-1.ckwevevoi5go.us-west-2.rds.amazonaws.com:5432/bankbot2";
-		//String connectionUrl = "jdbc:postgresql://localhost:5432/bankbot2";
+		//String connectionUrl = "jdbc:postgresql://database-***.amazonaws.com:5432/bankbot2";
+		String connectionUrl = "jdbc:postgresql://localhost:5432/bankbot2";
 		String userName = "postgres";
-		//String password = "root";
-		String password = "scatterbox567";
+		String password = "root";
 		
 		if(conn == null) {
 			conn = DriverManager.getConnection(connectionUrl, userName, password);	
